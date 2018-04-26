@@ -1,3 +1,4 @@
+# Coded by David Iglesias.
 # Main sequence data for 10pc
 bvN=[00.0
 0.13
