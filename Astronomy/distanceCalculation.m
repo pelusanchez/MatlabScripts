@@ -1,3 +1,4 @@
+# Main sequence data for 10pc
 bvN=[00.0
 0.13
 0.27
@@ -17,46 +18,11 @@ vN=[-0.7
 7.3 
 9.0];
 
-bv=[
-0.514
-0.782
-0.336
-0.557
-1.155
-0.699
-1.003
-0.12    
-0.995
-0.353
-0.539
-0.017
-1.326
-1.346
-0.686
-0.125
-0.843
-0.87    
-0.093];
+# bv: m_b-m_v data array
+bv=[];
 
-v=[9.46  
-11.337
-8.581   
-9.717   
-13.481
-10.536
-12.066
-7.395   
-12.007
-8.112   
-9.904   
-6.811   
-12.541
-13.743
-10.929
-6.953   
-10.818
-11.364
-7.545   ];
+# v: m_v data array
+v=[];
 
 
 
@@ -89,7 +55,7 @@ for i=1:n-1
 
     disp(['y=', num2str(m(j-1)), '(x- ',num2str(bvN(j)), ')+',num2str(vN(j))]);
 
-    disp(['Para bv=', num2str(bv(i)), ' el valor es ', num2str(-vReal)]);
+    disp(['For bv=', num2str(bv(i)), ' the value is ', num2str(-vReal)]);
 end;
 
 mMmean=mean(vRealArray);
